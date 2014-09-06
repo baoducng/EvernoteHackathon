@@ -62,3 +62,7 @@ i.ion-log-in {
 	color: #ddd !important;
     font-weight: bold;
 }
+
+button.button-block.button-balanced {
+  display: block;
+}
