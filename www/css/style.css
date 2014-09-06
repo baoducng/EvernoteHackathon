@@ -119,3 +119,10 @@ button.button-block.button-positive.login {
   background-color: #ffffff;
   top: 50%;
 }
+
+#forgot {
+  text-align:center;
+  margin:10px;
+  color: #c0c0c0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
