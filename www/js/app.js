@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('evernote', ['ionic', 'evernote.controllers',
+angular.module('evernote', ['ionic', 'restangular', 'evernote.controllers',
       'evernote.settings',
       'evernote.search',
       'evernote.allcards',
@@ -23,6 +23,9 @@ angular.module('evernote', ['ionic', 'evernote.controllers',
       StatusBar.styleDefault();
     }
   });
+})
+.config(function(RestangularProvider) {
+  RestangularProvider.setBaseUrl('http://serendipitly.com/evernote/');
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
