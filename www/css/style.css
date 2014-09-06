@@ -1,7 +1,9 @@
 /* Empty. Add your own CSS if you like */
 .bar.bar-stable {
   border-color: #24D665 !important;
-  background-color: #24D665 !important;
+  background-color: #FFFFFF !important;
+  border-bottom-width: 2px;
+  border-top-width: 0px;
 }
 
 .menu {
@@ -10,16 +12,29 @@
 /*.ion-item {
   background-color: #3F4241!important;
 }*/
+.title {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
+}
 
+.bar.bar-stable.roll-over-menu {
+  border-color: #24D665 !important;
+  background-color: #24D665 !important;
+}
+
+.
 .sideItems {
   background-color: #3F4241!important;
   background-color: #3F4241!important;
   color: #ddd !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   /*font-weight: bold;*/
 }
 
+
 .item-complex.item-content, .item-radio.item-content {
   background-color: #3F4241!important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 /* background-color: white; */
 }
 
@@ -48,19 +63,22 @@ i.ion-log-in {
 .sideItems {
   background-color: #3F4241!important;
   color: #ddd !important;
-  font-weight: bold;
+  font-weight: 575;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .item-complex /*.item-radio.item-content*/ {
   background-color: #3F4241!important;
   color: #ddd !important;
-  font-weight: bold;
+  font-weight: 575;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .item-content {
-	background-color:#3F4241!important;
-	color: #ddd !important;
-    font-weight: bold;
+  background-color:#3F4241!important;
+  color: #ddd !important;
+  font-weight: 575;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 button.button-block.button-balanced {
