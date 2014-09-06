@@ -8,7 +8,8 @@ angular.module('evernote', ['ionic', 'evernote.controllers',
       'evernote.settings',
       'evernote.search',
       'evernote.allcards',
-      'evernote.review'])
+      'evernote.review',
+      'evernote.login'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -53,5 +54,5 @@ angular.module('evernote', ['ionic', 'evernote.controllers',
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/search');
+  $urlRouterProvider.otherwise('/app/allcards');
 });
