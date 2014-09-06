@@ -1,6 +1,6 @@
-angular.module('starter.controllers', [])
+angular.module('evernote.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('evernoteCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
   $scope.loginData = {};
 
