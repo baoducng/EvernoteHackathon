@@ -15,10 +15,50 @@
   background-color: #3F4241!important;
   background-color: #3F4241!important;
   color: #ddd !important;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .item-complex.item-content, .item-radio.item-content {
   background-color: #3F4241!important;
 /* background-color: white; */
+}
+
+i.ion-ios7-bookmarks-outline {
+  font-size: 20px;
+}
+
+i.ion-ios7-gear-outline {
+  font-size: 25px;
+}
+
+
+i.ion-android-search {
+  font-size: 20px;
+}
+
+
+i.ion-clipboard {
+  font-size: 20px;
+}
+
+i.ion-log-in {
+  font-size: 20px;
+}
+
+.sideItems {
+  background-color: #3F4241!important;
+  color: #ddd !important;
+  font-weight: bold;
+}
+
+.item-complex /*.item-radio.item-content*/ {
+  background-color: #3F4241!important;
+  color: #ddd !important;
+  font-weight: bold;
+}
+
+.item-content {
+	background-color:#3F4241!important;
+	color: #ddd !important;
+    font-weight: bold;
 }

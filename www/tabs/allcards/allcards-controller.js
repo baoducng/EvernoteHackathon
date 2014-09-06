@@ -1,4 +1,5 @@
 angular.module('evernote.allcards.controller', [])
-.controller('allcardsController', function($scope){
-  $scope.name = "WHERE IS ALL THE CARDS"
+.controller('allcardsController', function($scope, dummyData){
+  $scope.cards = dummyData.data;
+
 })
