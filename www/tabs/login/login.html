@@ -3,7 +3,6 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
 <ion-content>
-  <h1>{{cards}}</h1>
   <form ng-submit="doLogin()">
     <div class="list">
       <label class="item item-input">
@@ -15,7 +14,7 @@
         <input type="password" ng-model="loginData.password">
       </label>
       <label class="item">
-        <button class="button button-block button-positive" type="submit">Log in</button>
+        <button class="button button-block button-positive login" type="submit">Log in</button>
       </label>
     </div>
   </form>

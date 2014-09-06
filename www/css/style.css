@@ -1,8 +1,8 @@
 /* Empty. Add your own CSS if you like */
 .bar.bar-stable {
+  border-bottom-width: 2px;
   border-color: #24D665 !important;
   background-color: #FFFFFF !important;
-  border-bottom-width: 2px;
   border-top-width: 0px;
 }
 
@@ -86,4 +86,9 @@ button.button-block.button-balanced {
 .pos_fixed {
   position: fixed;
   top: 45px;
+}
+
+button.button-block.button-positive.login {
+  background-color: #24D665;
+  border-color: #24D665;
 }
