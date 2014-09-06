@@ -33,14 +33,6 @@ angular.module('evernote', ['ionic', 'evernote.controllers',
       controller: 'evernoteCtrl'
     })
 
-    .state('app.browse', {
-      url: "/browse",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/browse.html"
-        }
-      }
-    })
     .state('app.playlists', {
       url: "/playlists",
       views: {

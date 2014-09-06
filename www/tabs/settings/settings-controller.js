@@ -1,4 +1,4 @@
 angular.module('evernote.settings.controller', [])
 .controller('settingsController', function($scope){
-  $scope.name = "1234"
+  $scope.name = "1234";
 })
