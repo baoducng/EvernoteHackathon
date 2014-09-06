@@ -66,3 +66,8 @@ i.ion-log-in {
 button.button-block.button-balanced {
   display: block;
 }
+
+.pos_fixed {
+  position: fixed;
+  top: 45px;
+}

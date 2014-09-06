@@ -7,6 +7,10 @@ angular.module('evernote').factory('dummyData', function(){
     {front: 'This is card 4',back: '333ok!!!!'},
     {front: 'This is card 5',back: '444ok!!!!'},
     {front: 'This is card 6',back: '55ok!!!!'},
+    {front: 'This is card 7',back: '55ok!!!!'},
+    {front: 'This is card 8',back: '55ok!!!!'},
+    {front: 'This is card 9',back: '55ok!!!!'},
+    {front: 'This is card 10',back: '55ok!!!!'},
     {front: 'This is card 7',back: '66ok!!!!'}
   ];
   return dummyData;
