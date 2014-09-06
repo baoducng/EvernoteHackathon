@@ -7,7 +7,8 @@
 angular.module('evernote', ['ionic', 'evernote.controllers',
       'evernote.settings',
       'evernote.search',
-      'evernote.allcards'])
+      'evernote.allcards',
+      'evernote.review'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -31,32 +32,6 @@ angular.module('evernote', ['ionic', 'evernote.controllers',
       templateUrl: "templates/menu.html",
       controller: 'evernoteCtrl'
     })
-    // .state('app.settings', {
-    //   url: "/settings",
-    //   views: {
-    //     'menuContent' : {
-    //       templateUrl: "tabs/settings/settings.html"
-    //     }
-    //   }
-    // })
-
-    // .state('app.search', {
-    //   url: "/search",
-    //   views: {
-    //     'menuContent' :{
-    //       templateUrl: "tabs/search/search.html"
-    //     }
-    //   }
-    // })
-
-    // .state('app.allcards', {
-    //   url: "/allcards",
-    //   views: {
-    //     'menuContent' :{
-    //       templateUrl: "tabs/allcards/allcards.html"
-    //     }
-    //   }
-    // })
 
     .state('app.browse', {
       url: "/browse",
