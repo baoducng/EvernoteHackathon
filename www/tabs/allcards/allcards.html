@@ -15,15 +15,17 @@
   <ion-content class="has-header" style="margin-top: 44px;">
     <div>
       <ul class="list">
-        <li class="item" ng-repeat="card in cards | filter:searchQuery" ng-click="zoom(card.front, card.back)">
+        <li class="item" ng-repeat="card in cards | filter:searchQuery" ng-click="zoom(card.front, card.back)" ng-hide="front">
           {{card.front}}
         </li>
       </ul>
     </div>
   </div>
-  <div ng-if="selected">
-    {{zoom1}};
-    {{zoom2}};
+  <div ng-if="selected" style="text-align: center;">
+    <h1 style="margin-top: 270px;" ng-if="!showAnswer">{{zoom1}}</h1>
+    <button class="button button-block button-balanced" ng-if="!showAnswer" type="submit" ng-click="show()" style="background-color:#24D665; border: none; margin-top: 100px">Show Answer</button>
+
+    <h1 style="margin-top: 270px;" ng-if="showAnswer">{{zoom2}}</h2>
   </div>
   </ion-content>
 </ion-view>

@@ -1,6 +1,7 @@
 angular.module('evernote.allcards.controller', [])
 .controller('allcardsController', function($scope, noteService){
   $scope.selected = 0;
+  $scope.showAnswer = false;
   noteService.getAll().then(function(data){
     $scope.cards = [].concat(data.due).concat(data.not_due);
     console.log('get data');
@@ -13,5 +14,8 @@ angular.module('evernote.allcards.controller', [])
     $scope.zoom1 = front;
     $scope.zoom2 = back;
   };
+  $scope.show = function(){
+    $scope.showAnswer = !$scope.showAnswer;
+  }
 
 })
