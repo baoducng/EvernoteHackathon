@@ -17,13 +17,24 @@ angular.module('evernote.review.controller', [])
   $scope.showBack = function(){
     $scope.frontShowing = false;
   }
-  $scope.next = function(){
+  $scope.next = function(rating){
     $scope.current++;
     $scope.currentCard = $scope.cards[$scope.current];
     $scope.frontShowing = true;
     if ($scope.current === $scope.cards.length){
       $scope.message = "Finished";
     }
-  }
-
+    var score = {
+      id: 'dev00',
+      score: rating,
+      token:'S=s1:U=8f613:E=14fa18711d7:C=14849d5e278:P=1cd:A=en-devtoken:V=2:H=8cb95491515dfd2a0bb42b2a94f2e372'
+    }
+    noteService.update(score);
 })
+//
+// {id: 'dev00',
+//  front: 'string',
+//  score: '' //1 -3,
+//  token: 'OAuthtoken'
+//
+// }

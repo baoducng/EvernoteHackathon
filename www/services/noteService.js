@@ -7,4 +7,32 @@ angular.module('evernote').service('noteService', function(Restangular){
                return error;
              })
   }
+  this.makeNote = function(data){
+    console.log(data);
+    return Restangular.one('add').post(data);
+  }
+  this.update = function(data){
+    console.log(data);
+    return Restangular.one('update').post(data);
+  }
 });
+
+/*
+POST
+for UPDATE to samething /update
+
+{id: 'dev00',
+ front: 'string',
+ score: '' //1 -3,
+ token: 'OAuthtoken'
+
+}
+//POST
+for add to samething /add
+
+{id: 'dev00',
+ front: 'string',
+ back: 'string',
+ token: 'OAuthtoken',
+}
+*/
