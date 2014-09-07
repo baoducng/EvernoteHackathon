@@ -10,4 +10,12 @@ angular.module('evernote.settings', ['evernote.settings.controller'])
         }
       }
     })
+    .state('app.help', {
+      url: "/help",
+      views: {
+        'menuContent' : {
+          templateUrl: "tabs/settings/help.html"
+        }
+      }
+    })
 });

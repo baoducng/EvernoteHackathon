@@ -17,5 +17,9 @@ angular.module('evernote.allcards.controller', [])
   $scope.show = function(){
     $scope.showAnswer = !$scope.showAnswer;
   }
+  $scope.reset = function(){
+    $scope.selected = 0;
+    $scope.showAnswer = false;
+  }
 
 })
