@@ -9,11 +9,11 @@ angular.module('evernote').service('noteService', function(Restangular){
   }
   this.makeNote = function(data){
     console.log(data);
-    return Restangular.one('add').post(data);
+    return Restangular.all('add').post(data);
   }
   this.update = function(data){
     console.log(data);
-    return Restangular.one('update').post(data);
+    return Restangular.all('update').post(data);
   }
 });
 

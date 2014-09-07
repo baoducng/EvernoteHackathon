@@ -3,6 +3,8 @@ angular.module('evernote.allcards.controller', [])
   $scope.selected = 0;
   noteService.getAll().then(function(data){
     $scope.cards = [].concat(data.due).concat(data.not_due);
+    console.log('get data');
+    console.log(data);
   }, function(error){
     console.log(error)
   });
