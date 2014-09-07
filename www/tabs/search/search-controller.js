@@ -1,5 +1,5 @@
 angular.module('evernote.search.controller', [])
-.controller('searchController', function($scope, noteService){
+.controller('searchController', function($scope, noteService, $timeout, $state){
   $scope.newCard = {front: "", back: ""};
   var data = {
     id: 'dev00',
@@ -10,6 +10,9 @@ angular.module('evernote.search.controller', [])
 
   $scope.makeCard = function(){
     noteService.makeNote(data);
+    $timeout(function(){
+      $state.go('app.allcards')
+    }, 3000)
   }
 })
 

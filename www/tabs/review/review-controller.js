@@ -1,5 +1,5 @@
 angular.module('evernote.review.controller', [])
-.controller('reviewController', function($scope, noteService){
+.controller('reviewController', function($scope, noteService, $state){
   $scope.current = 0;
   $scope.message = 0;
   $scope.frontShowing = true;
@@ -28,8 +28,9 @@ angular.module('evernote.review.controller', [])
       id: 'dev00',
       score: rating,
       token:'S=s1:U=8f613:E=14fa18711d7:C=14849d5e278:P=1cd:A=en-devtoken:V=2:H=8cb95491515dfd2a0bb42b2a94f2e372'
-    }
+    };
     noteService.update(score);
+  }
 })
 //
 // {id: 'dev00',
