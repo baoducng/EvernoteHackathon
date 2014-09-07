@@ -7,16 +7,16 @@
       <div ng-if="frontShowing" style="text-align: center; margin-top: 200px;">
         <h3>{{currentCard.front}}</h3>
         <div style="margin-top: 130px; width:95%; margin-left: 8px;">
-          <button class="button button-block button-balanced" type="submit" ng-click="showBack()" style="background-color:#24D665;">Show Answer</button>
+          <button class="button button-block button-balanced" type="submit" ng-click="showBack()" style="background-color:#24D665; border: none;">Show Answer</button>
         </div>
       </div>
       <div ng-if="!frontShowing" style="text-align: center; margin-top: 200px;">
         <h3>{{currentCard.back}}</h3>
       <div style="margin-top: 130px;">
         <img src = "img/good.png" height = "40" width = "40" ng-click="next()">
-          &nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <img src = "img/ok.png" height = "40" width = "40" align = "middle" ng-click="next()">
-          &nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <img src = "img/bad.png" height = "40" width = "40" align = "middle" ng-click="next()">
       </div>
       </div>
@@ -24,6 +24,10 @@
     <!-- if the user memorized everything -->
     <div ng-if="message">
       <img src="/img/quwfx3xdiupaykeo0iix.jpg" width="320px"></img>
+      <div style="text-align:center; margin-top: 40px;">
+        <h2>Congratulations!</h2>
+        <h2>You are done!</h2>
+      </div>
     </div>
   </ion-content>
 </ion-view>

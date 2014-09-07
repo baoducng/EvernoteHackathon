@@ -57,6 +57,9 @@ i.ion-clipboard {
 i.ion-log-in {
   font-size: 20px;
 }
+i.ion-help {
+  font-size: 20px;
+}
 
 .sideItems {
   background-color: #3F4241!important;
@@ -124,5 +127,9 @@ button.button-block.button-positive.login {
   text-align:center;
   margin:10px;
   color: #c0c0c0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1 h2 h3 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
