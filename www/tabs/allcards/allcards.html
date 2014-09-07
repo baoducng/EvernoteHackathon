@@ -2,6 +2,7 @@
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
+  <div ng-if="!selected">
     <div class="bar bar-header item-input-inset pos_fixed">
       <label class="item-input-wrapper">
       <i class="icon ion-ios7-search placeholder-icon"></i>
@@ -14,10 +15,15 @@
   <ion-content class="has-header" style="margin-top: 44px;">
     <div>
       <ul class="list">
-        <li class="item" ng-repeat="card in cards | filter:searchQuery">
+        <li class="item" ng-repeat="card in cards | filter:searchQuery" ng-click="zoom(card.front, card.back)">
           {{card.front}}
         </li>
       </ul>
     </div>
+  </div>
+  <div ng-if="selected">
+    {{zoom1}};
+    {{zoom2}};
+  </div>
   </ion-content>
 </ion-view>
